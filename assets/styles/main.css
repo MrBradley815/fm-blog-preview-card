@@ -1,0 +1,125 @@
+:root {
+  --color-yellow: #f4d04e;
+  --color-gray-950: #111111;
+  --color-gray-500: #6b6b6b;
+  --color-white: #ffffff;
+}
+
+html {
+  font-size: 62.5% !important;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Figtree';
+  src: url('../fonts/Figtree-VariableFont_wght.ttf');
+}
+
+body {
+  font-family: 'Figtree', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 150%;
+  display: grid;
+  place-items: center;
+  color: var(--color-gray-500);
+  background-color: var(--color-yellow);
+  padding: 2.4rem;
+  min-height: 100vh;
+}
+
+h3 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 150%;
+  color: var(--color-gray-950);
+}
+
+.card {
+  background-color: var(--color-white);
+  max-width: 38.4rem;
+  padding: 2.4rem;
+  border: 1px solid var(--color-gray-950);
+  border-style: inset;
+  border-radius: 2rem;
+  box-shadow: 0.8rem 0.8rem 0 0 rgb(0 0 0 / 100%);
+}
+
+.card-img {
+  width: 100%;
+  margin-bottom: 2.4rem;
+  border-radius: 1rem;
+}
+
+.card-tag {
+  font-weight: 700;
+  color: var(--color-gray-950);
+  background-color: var(--color-yellow);
+  width: fit-content;
+  margin-bottom: 1.2rem;
+  padding: 0.4rem 1.2rem;
+  border-radius: 0.4rem;
+}
+
+.card-date {
+  font-size: 1.4rem;
+  color: var(--color-gray-950);
+  margin-bottom: 1.2rem;
+}
+
+.card-title {
+  margin-bottom: 1.2rem;
+}
+
+.card-text {
+  margin-bottom: 2.4rem;
+}
+
+.card-author {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  font-weight: 700;
+  color: var(--color-gray-950);
+}
+
+.card-profile-pic {
+  width: 3.2rem;
+}
+
+@media (max-width: 431px) {
+  body {
+    font-size: 1.4rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  .card-tag {
+    font-size: 1.2rem;
+  }
+
+  .card-date {
+    font-size: 1.2rem;
+  }
+
+  .card-author {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    font-weight: 700;
+    color: var(--color-gray-950);
+  }
+
+  .card-profile-pic {
+    width: 3.2rem;
+  }
+}
